@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { createCustomElement } from '@angular/elements';
 
 import { MaterialModule } from './material-module';
-import { CardComponent } from './component/card/card.component'
+import { CardComponent } from './card/card.component'
 
 @NgModule({
   
