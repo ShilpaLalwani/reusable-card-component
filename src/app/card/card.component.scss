@@ -1,0 +1,20 @@
+.card {
+  max-width: 300px;
+  margin: 4px
+}
+/deep/ .card .mat-card-header-text{
+  margin:0px;
+}
+/deep/ .mat-card{
+  font-family: 'Titillium Web', sans-serif;
+}
+.mr5{
+  margin-right: 5px;
+}
+.text-pink{
+  color:#e41c77;
+}
+.learn-more{
+  float: right;
+  text-decoration: none;
+}

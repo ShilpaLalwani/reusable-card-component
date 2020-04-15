@@ -1,12 +1,9 @@
 import {Component, Input,Output, EventEmitter} from '@angular/core';
 
-/**
- * @title Card with multiple sections
- */
 @Component({
   selector: 'app-card',
   templateUrl: 'card.component.html',
-  styleUrls: ['card.component.css'],
+  styleUrls: ['card.component.scss'],
 })
 export class CardComponent {
    @Input() title: string;
@@ -17,7 +14,7 @@ export class CardComponent {
 
   @Output() likeNotify = new EventEmitter<boolean>();
   @Output() shareNotify = new EventEmitter<boolean>();
-  @Output() commentNotify = new EventEmitter<boolean>();
+  @Output() learnMoreNotify = new EventEmitter<boolean>();
 
   likeEvent() {
     this.likeNotify.emit(true);
@@ -25,7 +22,7 @@ export class CardComponent {
   shareEvent() {
     this.shareNotify.emit(true);
   }
-  commentEvent() {
-    this.commentNotify.emit(true);
+  learnMoreEvent() {
+    this.learnMoreNotify.emit(true);
   }
 }
